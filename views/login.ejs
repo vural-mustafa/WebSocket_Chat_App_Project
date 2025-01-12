@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 class="title" style="margin-top: 10rem">Giriş Yap</h1>
+<form action="/user/login" method="post">
+    <div class="formInput">
+        <div class="input">
+            <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+        </div>
+        <div class="input">
+            <input type="password" name="password" placeholder="Şifre" required>
+        </div>
+        <div class="input inputBtn">
+            <input type="submit" value="Giriş Yap">
+        </div>
+    </div>
+</form>
+<p class="hint">Hesabınız yok mu?<a href="/user/register"> Kayıt Ol!</a></p>
+</body>
+</html>

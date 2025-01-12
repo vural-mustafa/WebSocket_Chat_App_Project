@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 class="title" style="margin-top: 10rem">Kayıt Ol</h1>
+<form action="/user/register" method="post" >
+    <div class="formInput">
+        <div class="input">
+            <input type="text" name="fullName" placeholder="Ad Soyad" required>
+        </div>
+        <div class="input">
+            <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+        </div>
+        <div class="input">
+            <input type="password" name="password" placeholder="Şifre" required>
+        </div>
+        <div class="input inputBtn">
+            <input type="submit" value="Kayıt Ol">
+        </div>
+    </div>
+</form>
+<p class="hint">Hesabınız var mı?<a href="/user/login"> Giriş Yap!</a></p>
+
+</body>
+</html>

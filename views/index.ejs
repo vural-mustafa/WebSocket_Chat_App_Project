@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">TALKEEY</h1>
+<button onclick="cikisYap()" class="cikisBTN">Çıkış Yap</button>
+<h2 id="fullName" style="display: none"><%= userObject.fullName%></h2>
+<h2 id="userId" style="display: none"><%= userObject._id%></h2>
+<h2 id="username" style="display: none"><%= userObject.username%></h2>
+<ul id="chatArea">
+    <% for(message of messages) { %>
+    <%if(message.user._id.toString() === userObject._id.toString()) {%>
+
+        <li>
+            <div class="messageBox" style="text-align: end; margin-left: auto;margin-right: 10px;background: #FFA1CF;">
+                <div class="nameStlye"><p><%=message.user.fullName%></p></div>
+                <div class="messageStyle"><p><%=message.message%></p></div>
+            </div>
+        </li>
+    <%} else {%>
+
+    <li>
+        <div class="messageBox">
+            <div class="nameStlye"><p><%=message.user.fullName%></p></div>
+            <div class="messageStyle"><p><%=message.message%></p></div>
+        </div>
+    </li>
+        <%}%>
+    <%}%>
+<!--    <li>-->
+<!--        <div class="messageBox">-->
+<!--            <div class="nameStlye"><p>Hakan Hakyemez</p></div>-->
+<!--            <div class="messageStyle"><p>Naber iyi misin?</p></div>-->
+<!--        </div>-->
+<!--    </li>-->
+
+</ul>
+<div class="messageGonder">
+<input type="text" placeholder="message" name="message" id="messageInput">
+<button id="gonderBTN" onclick="sendMessage()">GONDER</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

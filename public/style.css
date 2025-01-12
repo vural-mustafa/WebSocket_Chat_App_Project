@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(233, 142, 173);
+    background: linear-gradient(90deg, rgba(233, 142, 173, 1) 0%, rgba(254, 161, 191, 1) 100%);
+}
+
+.title {
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 54px;
+}
+
+li {
+    list-style: none;
+}
+
+#chatArea {
+    border: 2px solid #FFC6D3;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    height: 500px;
+    max-height: 600px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#chatArea::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+}
+
+#chatArea::-webkit-scrollbar-thumb {
+    background: #FFC6D3;
+    border-radius: 20px;
+    width: 3px;
+}
+
+.messageBox {
+    background: #FFC6D3;
+    color: white;
+    max-width: 300px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+.nameStlye {
+    color: #0A2647 !important;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.messageStyle {
+    margin-left: 10px;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.messageGonder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageGonder input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.messageGonder button {
+    padding: 9px;
+    border-radius: 10px;
+    border: 1px solid #e84465;
+    outline: none;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    background: #FF597B;
+    color: white;
+}
+
+.messageGonder button:hover {
+    cursor: pointer;
+    padding: 11px;
+    border: 1px solid #e84465;
+    background: #f14d6e;
+}
+
+.formInput {
+    margin-top: 3rem;
+    text-align: center;
+}
+.input {
+    margin-top: 10px;
+}
+
+.input input {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 18px;
+}
+
+.inputBtn input{
+    margin-top: 20px;
+    border: 1px solid #e84465;
+    outline: none;
+    font-family: 'Kodchasan', sans-serif;
+    font-style: italic;
+    background: #FF597B;
+    color: white;
+}
+
+.hint {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Kodchasan', sans-serif;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+}
+
+.hint a{
+    text-decoration: none;
+    color: #0A2647;
+}
+.cikisBTN {
+    padding: 10px;
+    background: #e84465;
+    color: white;
+    border: 1px solid #f14d6e;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: auto;
+    display: flex;
+    font-family: 'Kodchasan', sans-serif;
+    font-style: italic;
+}
+
+.cikisBTN:hover {
+    padding: 12px;
+    background: #e53c5e;
+    cursor: pointer;
+}
